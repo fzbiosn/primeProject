@@ -1,0 +1,14 @@
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:35} INFO - Process Name - ITdashboard
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:36} INFO - Dev Name - Fabio Neves
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:37} INFO - Last Modification - 02/09/2022
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:38} INFO - -------------------------------
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:39} INFO - -------------------------------
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:23} INFO - Iniciando o step: 01_Iniciar_Excel
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\iniciar_excel.py:15} INFO - Criando arquivo de reports 'Agências'
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\iniciar_excel.py:17} INFO - Arquivo Agências_20220902.xlsx ja existente
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:32} INFO - Iniciando o step: 02_Acessar_Pagina
+[23:21:23] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:11} INFO - acessando
+[23:21:30] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:14} INFO - esperando
+[23:21:30] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:16} INFO - terminou
+[23:21:30] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:20} INFO - validar
+[23:21:30] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:22} INFO - validou
