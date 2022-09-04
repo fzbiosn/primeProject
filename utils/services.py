@@ -14,9 +14,10 @@ except ValueError:
     pass
 
 ### Open WebDriver ###
-s = Service(EdgeChromiumDriverManager().install())
-driver_service = webdriver.Edge(service=s)
+#service = Service(r'C:\webdrivers\msedgedriver.exe')
+driver_service = webdriver.Edge(r'C:\webdrivers\msedgedriver.exe')
 driver_service.implicitly_wait(10)
+
 
 def screenshot(passo):
     name = r'C:\Users\Fabio\PycharmProjects\primeProject\output\screenshot\error_' + passo + str(

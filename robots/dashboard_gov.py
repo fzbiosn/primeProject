@@ -1,8 +1,8 @@
-import utils.services
-import input.config
 import logging
 import input.config
+import input.config
 import tasks.acessar_pagina
+import tasks.coletar_despesas
 import tasks.iniciar_excel
 import utils.services
 
@@ -26,7 +26,7 @@ def run_tasks():
     except Exception as x:
         logging.error("Erro no step: " + step + " - " + str(x))
         utils.services.screenshot(step)
-        #utils.services.finish_drive()
+        utils.services.finish_drive()
     logging.info('-----------------------------')
 
     step = '02_Acessar_Pagina'
@@ -37,18 +37,14 @@ def run_tasks():
     except Exception as x:
         logging.error("Erro no step: " + step + " - " + str(x))
         utils.services.screenshot(step)
-        # utils.services.finish_drive()
-        #utils.services.finish_drive()
+        utils.services.finish_drive()
     logging.info('-----------------------------')
-
-
 
     step = '03_Coletar_Despesas'
     logging.info('Iniciando o step: ' + step)
     try:
-        logging
-        # Clicar em Explorer
-        # Capturar Nome de Agencias
+        tasks.coletar_despesas.clicar_botao_explorer()
+        tasks.coletar_despesas.capturar_agencias()
         # Realizar Loop
         # Capturar Despesas
     except Exception as x:
@@ -72,5 +68,8 @@ def run_tasks():
         # utils.services.finish_drive()
         # utils.services.finish_drive()
     logging.info('-----------------------------')
+
+    # utils.services.finish_drive()
+
 
 run_tasks()

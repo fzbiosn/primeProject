@@ -1,4 +1,3 @@
-from RPA.Browser.Selenium import Selenium
 from selenium.webdriver.common.by import By
 import logging
 import utils.services

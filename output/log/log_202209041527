@@ -1,0 +1,22 @@
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:36} INFO - Process Name - ITdashboard
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:37} INFO - Dev Name - Fabio Neves
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:38} INFO - Last Modification - 02/09/2022
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:39} INFO - ----------------------------------
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:40} INFO - ----------------------------------
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:23} INFO - Iniciando o step: 01_Iniciar_Excel
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\iniciar_excel.py:14} INFO - Criando arquivo de reports 'Agencias'
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\iniciar_excel.py:16} INFO - Arquivo Agências_20220904.xlsx ja existente
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:30} INFO - -----------------------------
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:33} INFO - Iniciando o step: 02_Acessar_Pagina
+[15:27:17] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:10} INFO - Acessando a url: https://www.itdashboard.gov/
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:17} INFO - Validando se a URL foi aberta com sucesso
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:19} INFO - URL carregada
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:41} INFO - -----------------------------
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:44} INFO - Iniciando o step: 03_Coletar_Despesas
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:18} INFO - Clicando no botao Explorer - IT Portfolio
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:22} INFO - Pagina de despesas carregada
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:29} INFO - <selenium.webdriver.remote.webelement.WebElement (session="9c60f5d5cc43d8750f119a9384ded85e", element="29c6cd63-cc93-4b34-939d-8c1521f770be")>
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:31} INFO - <selenium.webdriver.support.select.Select object at 0x0000019EDD435D80>
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:55} INFO - -----------------------------
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:58} INFO - Iniciando o step: 04_Capturar_Overview
+[15:27:25] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:70} INFO - -----------------------------
