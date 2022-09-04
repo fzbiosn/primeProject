@@ -20,7 +20,8 @@ def create_excel():
         logging.info("Arquivo " + name + " criado")
         #### Set Excel Header ###
         agencia.write('A1', 'Agency')
-        agencia.write('B1', 'Spending')
+        agencia.write('B1', 'FY 2022 IT Spending')
+        agencia.write('C1', 'Spending on Major Investments')
         logging.info("Cabeçalho criado")
         workbook.close()
         # currency_format = workbook.add_format({'num_format': '$#,##0'})

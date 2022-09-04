@@ -45,6 +45,7 @@ def run_tasks():
     try:
         tasks.coletar_despesas.clicar_botao_explorer()
         tasks.coletar_despesas.capturar_agencias()
+        tasks.coletar_despesas.percorrer_lista()
         # Realizar Loop
         # Capturar Despesas
     except Exception as x:
