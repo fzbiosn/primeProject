@@ -62,8 +62,7 @@ def run_tasks():
     except Exception as x:
         logging.error("Erro no step: " + step + " - " + str(x))
         utils.services.screenshot(step)
-        # utils.services.finish_drive()
-        # utils.services.finish_drive()
+        utils.services.finish_drive()
     logging.info('-----------------------------')
 
     utils.services.finish_drive()

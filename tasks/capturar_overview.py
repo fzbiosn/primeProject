@@ -1,13 +1,12 @@
 import logging
 import time
-from openpyxl import load_workbook
+from selenium.webdriver import ActionChains
 import tasks.iniciar_excel
 import tasks.coletar_despesas
 import utils.services
 import input.config
 import pandas as pd
 from selenium.webdriver.support.ui import Select
-from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 import csv
 
@@ -40,7 +39,7 @@ def baixar_csv():
     download_file = download_path + name_agency_file
     print(download_file)
     logging.info('Realizando download do arquivo CSV')
-    #ActionChains(drive_service).click('//*[@id="agency-info-wrapper"]/div/div[1]/div[3]/div[2]/a').perform()
+    ActionChains(drive_service).click('//*[@id="agency-info-wrapper"]/div/div[1]/div[3]/div[2]/a').perform()
     if download_file:
         logging.info('Download realizado com sucesso')
     else:
