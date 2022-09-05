@@ -4,6 +4,7 @@ import input.config
 import tasks.acessar_pagina
 import tasks.coletar_despesas
 import tasks.iniciar_excel
+import tasks.capturar_overview
 import utils.services
 
 
@@ -46,23 +47,18 @@ def run_tasks():
         tasks.coletar_despesas.clicar_botao_explorer()
         tasks.coletar_despesas.capturar_agencias()
         tasks.coletar_despesas.percorrer_lista()
-        # Realizar Loop
-        # Capturar Despesas
     except Exception as x:
         logging.error("Erro no step: " + step + " - " + str(x))
         utils.services.screenshot(step)
-        # utils.services.finish_drive()
         # utils.services.finish_drive()
     logging.info('-----------------------------')
 
     step = '04_Capturar_Overview'
     logging.info('Iniciando o step: ' + step)
     try:
-        logging
-        # Selecionar Agencia
-        # Realizar donwload do CSV
-        # Criar Nova Aba
-        # Ler CSV
+        tasks.capturar_overview.selecionar_agencia()
+        tasks.capturar_overview.baixar_csv()
+        tasks.capturar_overview.percorrer_csv()
     except Exception as x:
         logging.error("Erro no step: " + step + " - " + str(x))
         utils.services.screenshot(step)

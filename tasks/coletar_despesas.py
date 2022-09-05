@@ -46,8 +46,9 @@ def percorrer_lista():
     list_agency, select = capturar_agencias()
     session_agency, path_session_excel = session_excel()
     index_excel = 0
-    for index in range(1, len(list_agency) - 1):
-        logging.info('Selecionando agencia: ' + "index= " + str(index) + list_agency[index].text)
+    #for index in range(1, len(list_agency) - 1):
+    for index in range(1, len(list_agency)):
+        logging.info('Selecionando agencia: ' + list_agency[index].text)
         select.select_by_visible_text(list_agency[index].text)
         time.sleep(2)
 
@@ -60,13 +61,16 @@ def percorrer_lista():
             print('Agency: ' + list_agency[
                 index].text + '| IT_Spending: ' + it_spending + '| Investiment Spending: ' + investiments_spending)
 
-            session_agency.at[index_excel, 'Agency'] = list_agency[index].text
-            session_agency.at[index_excel, 'FY 2022 IT Spending'] = it_spending
-            session_agency.at[index_excel, 'Spending on Major Investments'] = investiments_spending
-            print('index excel:' + str(index_excel))
-            #session_agency.to_excel(path_session_excel)
+            # Se size > 0 and < 80 #
+            if session_agency.size < 78:
+                logging.info('Inserindo valores no excel')
+                session_agency.at[index_excel, 'Agency'] = list_agency[index].text
+                session_agency.at[index_excel, 'FY 2022 IT Spending'] = it_spending
+                session_agency.at[index_excel, 'Spending on Major Investments'] = investiments_spending
+
         index_excel += 1
         coletar_despesa()
-        session_agency.to_excel(path_session_excel)
+        session_agency.to_excel(path_session_excel, sheet_name='Agencia')
+        print(str(session_agency.size))
 
 
