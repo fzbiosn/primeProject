@@ -1,0 +1,84 @@
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:36} INFO - Process Name - ITdashboard
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:37} INFO - Dev Name - Fabio Neves
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:38} INFO - Last Modification - 02/09/2022
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:39} INFO - ----------------------------------
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\utils\services.py:40} INFO - ----------------------------------
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:24} INFO - Iniciando o step: 01_Iniciar_Excel
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\iniciar_excel.py:14} INFO - Criando arquivo de reports 'Agencias'
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\iniciar_excel.py:16} INFO - Arquivo Agências_20220905.xlsx ja existente
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:31} INFO - -----------------------------
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:34} INFO - Iniciando o step: 02_Acessar_Pagina
+[05:52:31] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:10} INFO - Acessando a url: https://www.itdashboard.gov/
+[05:52:38] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:17} INFO - Validando se a URL foi aberta com sucesso
+[05:52:38] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\acessar_pagina.py:19} INFO - URL carregada
+[05:52:38] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:42} INFO - -----------------------------
+[05:52:38] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:45} INFO - Iniciando o step: 03_Coletar_Despesas
+[05:52:38] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:25} INFO - Clicando no botao Explorer - IT Portfolio
+[05:52:39] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:29} INFO - Pagina de despesas carregada
+[05:52:39] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:35} INFO - Criando uma lista com o nome das agencias
+[05:52:39] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:40} INFO - Status da criacao da lista: True
+[05:52:39] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:35} INFO - Criando uma lista com o nome das agencias
+[05:52:39] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:40} INFO - Status da criacao da lista: True
+[05:52:40] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Agriculture
+[05:52:42] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:43] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Commerce
+[05:52:45] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:45] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Defense
+[05:52:47] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:47] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Education
+[05:52:49] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:49] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Energy
+[05:52:51] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:51] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Health and Human Services
+[05:52:53] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:54] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Homeland Security
+[05:52:56] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:56] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Housing and Urban Development
+[05:52:58] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:52:58] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Justice
+[05:53:00] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:00] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Labor
+[05:53:02] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:02] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of State
+[05:53:04] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:05] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Transportation
+[05:53:07] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:07] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of Veterans Affairs
+[05:53:09] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:09] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of the Interior
+[05:53:11] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:11] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Department of the Treasury
+[05:53:13] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:13] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Environmental Protection Agency
+[05:53:15] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:16] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: General Services Administration
+[05:53:18] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:18] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: National Aeronautics and Space Administration
+[05:53:20] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:20] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: National Archives and Records Administration
+[05:53:22] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:22] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: National Science Foundation
+[05:53:24] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:24] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Nuclear Regulatory Commission
+[05:53:26] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:26] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Office of Personnel Management
+[05:53:29] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:29] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Small Business Administration
+[05:53:31] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:31] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: Social Security Administration
+[05:53:33] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:33] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: U.S. Agency for International Development
+[05:53:35] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:35] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:51} INFO - Selecionando agencia: U.S. Army Corps of Engineers
+[05:53:37] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\coletar_despesas.py:56} INFO - Coletando as despesas
+[05:53:37] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:54} INFO - -----------------------------
+[05:53:37] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:57} INFO - Iniciando o step: 04_Capturar_Overview
+[05:53:37] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\capturar_overview.py:33} INFO - Selecionando a agencia: Department of Justice
+[05:53:41] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\capturar_overview.py:41} INFO - Realizando download do arquivo CSV
+[05:53:41] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\capturar_overview.py:44} INFO - Download realizado com sucesso
+[05:53:41] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\capturar_overview.py:51} INFO - Percorrendo arquivo CSV baixado
+[05:53:41] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\capturar_overview.py:41} INFO - Realizando download do arquivo CSV
+[05:53:41] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\capturar_overview.py:44} INFO - Download realizado com sucesso
+[05:53:41] {C:\Users\Fabio\PycharmProjects\primeProject\tasks\capturar_overview.py:57} INFO - Capturando valores da linha
+[05:53:41] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:63} ERROR - Erro no step: 04_Capturar_Overview - 'list' object has no attribute 'split'
+[05:53:42] {C:\Users\Fabio\PycharmProjects\primeProject\robots\dashboard_gov.py:67} INFO - -----------------------------

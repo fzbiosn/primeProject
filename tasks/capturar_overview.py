@@ -51,22 +51,23 @@ def percorrer_csv():
     logging.info('Percorrendo arquivo CSV baixado')
     session_agency, path_session_excel = session_excel()
     download_file = baixar_csv()
-    with open(download_file, 'rb') as ficheiro:
+    with open(download_file, 'rt') as ficheiro:
         reader = csv.reader(ficheiro)
         for linha in reader:
             logging.info('Capturando valores da linha')
-            agency_name, spending_type, fiscal_year, spending_amount, last_updated = linha.split(',')
-            print(agency_name, + '|' + spending_type, + '|' + fiscal_year, + '|' + spending_amount,
-                  + '|' + last_updated)
+            linha_str = str(linha)
+            agency_name, spending_type, fiscal_year, spending_amount, last_updated = linha_str.split(',')
+            #print(agency_name, + '|' + spending_type, + '|' + fiscal_year, + '|' + spending_amount,
+            #      + '|' + last_updated)
 
             # Se size > 0 and < 80 #
-            if session_agency.size < 200:
-                logging.info('Inserindo valores no excel')
-                session_agency.at[linha, 1] = agency_name
-                session_agency.at[linha, 2] = spending_type
-                session_agency.at[linha, 3] = fiscal_year
-                session_agency.at[linha, 4] = spending_amount
-                session_agency.at[linha, 5] = last_updated
+            #if session_agency.size < 200:
+            logging.info('Inserindo valores no excel')
+            session_agency.at[linha, 1] = agency_name
+            session_agency.at[linha, 2] = spending_type
+            session_agency.at[linha, 3] = fiscal_year
+            session_agency.at[linha, 4] = spending_amount
+            session_agency.at[linha, 5] = last_updated
 
         session_agency.to_excel(path_session_excel, sheet_name=name_agency_file)
-        print(str(session_agency.size))
+        #print(str(session_agency.size))
