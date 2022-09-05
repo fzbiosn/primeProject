@@ -70,7 +70,7 @@ def run_tasks():
         # utils.services.finish_drive()
     logging.info('-----------------------------')
 
-    # utils.services.finish_drive()
+    utils.services.finish_drive()
 
 
 run_tasks()
