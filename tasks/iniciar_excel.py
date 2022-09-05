@@ -18,6 +18,9 @@ def create_excel():
         workbook = xlsxwriter.Workbook(FILE_PATH_EXCEL)
         agencia = workbook.add_worksheet('Agencia')
         logging.info("Arquivo " + name_excel + " criado")
+        ### Add other worksheet
+        overview = workbook.add_worksheet('Spending Overview')
+        logging.info("Sheet overview criada")
         #### Set Excel Header ###
         agencia.write('A1', 'Agency')
         agencia.write('B1', 'FY 2022 IT Spending')

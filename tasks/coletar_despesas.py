@@ -16,7 +16,7 @@ drive_service = utils.services.driver_service
 # Atribuindo variavéis do Excel #
 def session_excel():
     file_path_excel = tasks.iniciar_excel.FILE_PATH_EXCEL
-    sheet_agency = pd.read_excel(file_path_excel)
+    sheet_agency = pd.read_excel(file_path_excel, sheet_name="Agencia")
     print(sheet_agency)
     return sheet_agency, file_path_excel
 
@@ -70,7 +70,7 @@ def percorrer_lista():
 
         index_excel += 1
         coletar_despesa()
-        session_agency.to_excel(path_session_excel, sheet_name='Agencia')
+        session_agency.to_excel(path_session_excel, sheet_name='Agencia', index=False)
         print(str(session_agency.size))
 
 

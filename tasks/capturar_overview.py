@@ -1,5 +1,6 @@
 import logging
 import time
+from openpyxl import load_workbook
 import tasks.iniciar_excel
 import tasks.coletar_despesas
 import utils.services
@@ -22,9 +23,9 @@ drive_service = utils.services.driver_service
 # Atribuindo variavéis do Excel #
 def session_excel():
     file_path_excel = tasks.iniciar_excel.FILE_PATH_EXCEL
-    sheet_agency = pd.read_excel(file_path_excel)
-    print(sheet_agency)
-    return sheet_agency, file_path_excel
+    sheet_overview = pd.read_excel(file_path_excel, sheet_name='Spending Overview')
+    print(sheet_overview)
+    return sheet_overview, file_path_excel
 
 
 def selecionar_agencia():
@@ -51,23 +52,26 @@ def percorrer_csv():
     logging.info('Percorrendo arquivo CSV baixado')
     session_agency, path_session_excel = session_excel()
     download_file = baixar_csv()
-    with open(download_file, 'rt') as ficheiro:
-        reader = csv.reader(ficheiro)
-        for linha in reader:
-            logging.info('Capturando valores da linha')
-            linha_str = str(linha)
-            agency_name, spending_type, fiscal_year, spending_amount, last_updated = linha_str.split(',')
-            #print(agency_name, + '|' + spending_type, + '|' + fiscal_year, + '|' + spending_amount,
-            #      + '|' + last_updated)
 
-            # Se size > 0 and < 80 #
-            #if session_agency.size < 200:
-            logging.info('Inserindo valores no excel')
-            session_agency.at[linha, 1] = agency_name
-            session_agency.at[linha, 2] = spending_type
-            session_agency.at[linha, 3] = fiscal_year
-            session_agency.at[linha, 4] = spending_amount
-            session_agency.at[linha, 5] = last_updated
+    with open(download_file) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        line_count = 0
+        for row in csv_reader:
+            if line_count == 0:
+                print(f'Column names are {", ".join(row)}')
+                line_count += 1
+            else:
+                print(f'\t agency: {row[0]} , spending_type:  {row[1]} , fiscal_year: {row[2]},'
+                      f'spending_amount: {row[3]}, last_updated: {row[4]}')
+                line_count += 1
 
-        session_agency.to_excel(path_session_excel, sheet_name=name_agency_file)
-        #print(str(session_agency.size))
+                logging.info('Inserindo valores no excel')
+                session_agency.at[line_count, 1] = row[0]
+                session_agency.at[line_count, 2] = row[1]
+                session_agency.at[line_count, 3] = row[2]
+                session_agency.at[line_count, 4] = row[3]
+                session_agency.at[line_count, 5] = row[4]
+        print(f'Processed {line_count} lines.')
+        session_agency.to_excel(path_session_excel, sheet_name='Spending Overview', header=None, index=False)
+        session_agency.save()
+
